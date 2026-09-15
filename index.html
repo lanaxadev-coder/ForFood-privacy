@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="ForFood Privacy Policy — how we collect, use, and protect your data." />
+<title>Privacy Policy — ForFood</title>
+<style>
+  :root {
+    --yellow: #F5CB58;
+    --orange: #E95322;
+    --yellow2: #F3E9B5;
+    --text: #391713;
+    --gray: #676463;
+    --bg: #FFFDF6;
+    --card: #FFFFFF;
+    --divider: #FFD7C6;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ──────────────── HEADER ──────────────── */
+  header {
+    background: linear-gradient(135deg, var(--yellow) 0%, var(--yellow2) 100%);
+    padding: 60px 24px 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 22px solid rgba(233, 83, 34, 0.12);
+  }
+
+  header::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 18px solid rgba(233, 83, 34, 0.10);
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .brand .for { color: var(--orange); }
+  .brand .food { color: #FFF; text-shadow: 0 1px 0 rgba(0,0,0,0.06); }
+
+  header h1 {
+    margin-top: 14px;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--text);
+    position: relative;
+    z-index: 1;
+    letter-spacing: -0.3px;
+  }
+
+  header p {
+    margin-top: 8px;
+    color: var(--text);
+    opacity: 0.7;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ──────────────── LAYOUT ──────────────── */
+  main {
+    max-width: 860px;
+    margin: -40px auto 60px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .card {
+    background: var(--card);
+    border-radius: 24px;
+    padding: 42px 40px;
+    box-shadow:
+      0 1px 2px rgba(57, 23, 19, 0.04),
+      0 12px 32px rgba(233, 83, 34, 0.07);
+    border: 1px solid rgba(255, 215, 198, 0.5);
+  }
+
+  /* ──────────────── TOC ──────────────── */
+  .toc {
+    background: #FFF8E8;
+    border-left: 4px solid var(--orange);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 36px;
+  }
+
+  .toc h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--orange);
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .toc ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 20px;
+  }
+
+  .toc a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 3px 0;
+    transition: color 0.15s;
+  }
+
+  .toc a:hover { color: var(--orange); }
+
+  .toc .num {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 12px;
+    min-width: 20px;
+  }
+
+  /* ──────────────── SECTIONS ──────────────── */
+  section { margin-bottom: 42px; scroll-margin-top: 24px; }
+
+  section h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    letter-spacing: -0.2px;
+  }
+
+  section h2 .num {
+    color: var(--orange);
+    font-size: 15px;
+    font-weight: 800;
+    background: var(--yellow2);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0 8px;
+    color: var(--text);
+  }
+
+  section p {
+    margin-bottom: 12px;
+    color: #4a2b26;
+    font-size: 15px;
+  }
+
+  section ul, section ol.list {
+    margin: 10px 0 16px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  section ul li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #4a2b26;
+  }
+
+  section ul li::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--orange);
+    opacity: 0.7;
+  }
+
+  section ul li strong { color: var(--text); }
+
+  a.inline {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px dashed rgba(233, 83, 34, 0.4);
+    transition: border-color 0.15s;
+  }
+
+  a.inline:hover { border-bottom-color: var(--orange); }
+
+  .callout {
+    background: #FFF8E8;
+    border-left: 4px solid var(--orange);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 14.5px;
+    color: var(--text);
+  }
+
+  .callout strong { color: var(--orange); }
+
+  /* ──────────────── TABLE ──────────────── */
+  .table-wrap { overflow-x: auto; margin: 14px 0 18px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--divider);
+  }
+
+  th, td {
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--divider);
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--yellow2);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  td { color: #4a2b26; }
+
+  /* ──────────────── CONTACT ──────────────── */
+  .contact-card {
+    background: linear-gradient(135deg, var(--orange) 0%, #d94516 100%);
+    border-radius: 20px;
+    padding: 32px 30px;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .contact-card h3 {
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+
+  .contact-card p {
+    color: rgba(255,255,255,0.92);
+    font-size: 14.5px;
+    margin-bottom: 18px;
+  }
+
+  .contact-card a.email {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.18);
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: background 0.15s;
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+
+  .contact-card a.email:hover { background: rgba(255,255,255,0.28); }
+
+  /* ──────────────── FOOTER ──────────────── */
+  footer {
+    text-align: center;
+    padding: 30px 20px 50px;
+    color: var(--gray);
+    font-size: 13px;
+  }
+
+  footer .updated {
+    display: inline-block;
+    background: #FFF8E8;
+    color: var(--orange);
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  /* ──────────────── RESPONSIVE ──────────────── */
+  @media (max-width: 640px) {
+    header { padding: 44px 20px 56px; }
+    header h1 { font-size: 24px; }
+    .brand { font-size: 28px; }
+    .card { padding: 28px 22px; border-radius: 20px; }
+    .toc ol { grid-template-columns: 1fr; }
+    section h2 { font-size: 19px; }
+    section p, section ul li { font-size: 14.5px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><span class="for">For</span><span class="food">Food</span></div>
+  <h1>Privacy Policy</h1>
+  <p>Your data, your rights — explained clearly.</p>
+</header>
+
+<main>
+  <div class="card">
+
+    <p style="margin-bottom: 26px;">
+      This Privacy Policy explains how <strong>ForFood</strong> ("we", "us", "our")
+      collects, uses, stores, and shares information when you use our mobile
+      application and services (the "Service"). By using ForFood, you agree to
+      the practices described in this policy.
+    </p>
+
+    <!-- TOC -->
+    <nav class="toc">
+      <h3>Table of Contents</h3>
+      <ol>
+        <li><a href="#s1"><span class="num">1.</span> Information We Collect</a></li>
+        <li><a href="#s2"><span class="num">2.</span> How We Use Your Information</a></li>
+        <li><a href="#s3"><span class="num">3.</span> Legal Basis for Processing</a></li>
+        <li><a href="#s4"><span class="num">4.</span> Sharing & Disclosure</a></li>
+        <li><a href="#s5"><span class="num">5.</span> Third-Party Services</a></li>
+        <li><a href="#s6"><span class="num">6.</span> Location Data</a></li>
+        <li><a href="#s7"><span class="num">7.</span> Camera & Photo Library</a></li>
+        <li><a href="#s8"><span class="num">8.</span> Push Notifications</a></li>
+        <li><a href="#s9"><span class="num">9.</span> Data Retention</a></li>
+        <li><a href="#s10"><span class="num">10.</span> Data Security</a></li>
+        <li><a href="#s11"><span class="num">11.</span> Children's Privacy</a></li>
+        <li><a href="#s12"><span class="num">12.</span> Your Rights</a></li>
+        <li><a href="#s13"><span class="num">13.</span> International Transfers</a></li>
+        <li><a href="#s14"><span class="num">14.</span> Changes to This Policy</a></li>
+        <li><a href="#s15"><span class="num">15.</span> Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1 -->
+    <section id="s1">
+      <h2><span class="num">1</span> Information We Collect</h2>
+      <p>We collect the following categories of information when you use ForFood:</p>
+
+      <h3>a) Information You Provide Directly</h3>
+      <ul>
+        <li><strong>Account details:</strong> full name, email address, and password (encrypted).</li>
+        <li><strong>Optional profile data:</strong> phone number and profile photo.</li>
+        <li><strong>Delivery addresses:</strong> labels, full addresses, and pinned map coordinates you save in your address book.</li>
+        <li><strong>Order details:</strong> items ordered, quantities, order status, and total amount.</li>
+        <li><strong>Chat messages:</strong> messages exchanged with a restaurant about a specific order.</li>
+        <li><strong>Reviews:</strong> star ratings and comments you leave for restaurants.</li>
+        <li><strong>Restaurant owners:</strong> restaurant name, address, geolocation, description, menu items with photos and prices, and optional phone number.</li>
+      </ul>
+
+      <h3>b) Information Collected Automatically</h3>
+      <ul>
+        <li><strong>Location data:</strong> precise GPS coordinates (with your permission) to show nearby restaurants and calculate delivery distance.</li>
+        <li><strong>Device tokens:</strong> Firebase Cloud Messaging (FCM) token for push notifications.</li>
+        <li><strong>Usage data:</strong> restaurant views, order counts, and in-app interactions used to power recommendations and "High Demand" sections.</li>
+      </ul>
+
+      <h3>c) Information from Third Parties</h3>
+      <ul>
+        <li><strong>Google Sign-In:</strong> if you choose Google login, we receive your name, email, and profile photo from Google.</li>
+      </ul>
+    </section>
+
+    <!-- 2 -->
+    <section id="s2">
+      <h2><span class="num">2</span> How We Use Your Information</h2>
+      <p>We use the collected data to:</p>
+      <ul>
+        <li>Create and manage your account, and authenticate you securely.</li>
+        <li>Process orders, send them to restaurants, and track their status.</li>
+        <li>Calculate distances and show restaurants, dishes, and prices near you.</li>
+        <li>Enable real-time chat between you and a restaurant for a specific order.</li>
+        <li>Send push notifications about order status (accepted, preparing, ready, delivered).</li>
+        <li>Display your saved delivery addresses for faster checkout.</li>
+        <li>Publish customer reviews and compute restaurant ratings.</li>
+        <li>Manage restaurant subscriptions (via RevenueCat).</li>
+        <li>Improve the app, prevent fraud, and comply with legal obligations.</li>
+      </ul>
+    </section>
+
+    <!-- 3 -->
+    <section id="s3">
+      <h2><span class="num">3</span> Legal Basis for Processing</h2>
+      <p>Depending on your jurisdiction, we process your data under one or more of the following legal bases:</p>
+      <ul>
+        <li><strong>Performance of a contract:</strong> to provide the Service you signed up for (accounts, orders, chat, reviews).</li>
+        <li><strong>Consent:</strong> for location access, push notifications, camera / photo access — which you can withdraw at any time in your device settings.</li>
+        <li><strong>Legitimate interests:</strong> to prevent fraud, improve the Service, and ensure security.</li>
+        <li><strong>Legal obligation:</strong> to comply with applicable laws and valid requests from public authorities.</li>
+      </ul>
+    </section>
+
+    <!-- 4 -->
+    <section id="s4">
+      <h2><span class="num">4</span> Sharing & Disclosure</h2>
+      <p>We do <strong>not</strong> sell your personal information. We share data only in these cases:</p>
+      <ul>
+        <li><strong>With restaurants:</strong> when you place an order, we share your name, phone number, email, delivery address, order details, and any chat messages to fulfill the order.</li>
+        <li><strong>With service providers</strong> (listed in Section 5) who process data strictly on our behalf.</li>
+        <li><strong>For legal reasons:</strong> if required by law, subpoena, or to protect the rights and safety of our users, our team, or the public.</li>
+        <li><strong>Business transfers:</strong> in the event of a merger, acquisition, or sale of assets, your data may be transferred, and we will notify you.</li>
+      </ul>
+    </section>
+
+    <!-- 5 -->
+    <section id="s5">
+      <h2><span class="num">5</span> Third-Party Services</h2>
+      <p>ForFood relies on trusted third-party services. Each has its own privacy policy:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Purpose</th>
+              <th>Data Shared</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Google Firebase</strong><br>(Auth, Firestore, Cloud Messaging)</td>
+              <td>Authentication, database, push notifications</td>
+              <td>Account data, orders, chats, notifications, device token</td>
+            </tr>
+            <tr>
+              <td><strong>Google Sign-In</strong></td>
+              <td>Optional login method</td>
+              <td>Name, email, profile photo</td>
+            </tr>
+            <tr>
+              <td><strong>ImgBB</strong></td>
+              <td>Image hosting for profile photos, menu items, gallery</td>
+              <td>Images you upload (publicly accessible URLs)</td>
+            </tr>
+            <tr>
+              <td><strong>OpenStreetMap &amp; Nominatim</strong></td>
+              <td>Map display and address geocoding</td>
+              <td>Approximate coordinates for map tiles; search queries for geocoding</td>
+            </tr>
+            <tr>
+              <td><strong>OSRM</strong> (routing)</td>
+              <td>Driving route calculation</td>
+              <td>Start &amp; destination coordinates</td>
+            </tr>
+            <tr>
+              <td><strong>Google Maps</strong></td>
+              <td>Turn-by-turn navigation (external link)</td>
+              <td>Destination coordinates (opened in the Maps app)</td>
+            </tr>
+            <tr>
+              <td><strong>RevenueCat</strong></td>
+              <td>Restaurant subscription management</td>
+              <td>Anonymous app user ID, purchase status</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout">
+        <strong>Note:</strong> We do not control and are not responsible for
+        the privacy practices of these third parties. Please review their
+        policies before use.
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section id="s6">
+      <h2><span class="num">6</span> Location Data</h2>
+      <p>
+        ForFood requests access to your device's precise location so we can
+        show restaurants near you and calculate delivery distance. Location
+        access is granted only <strong>while you use the app</strong> and can
+        be revoked at any time in your device settings:
+      </p>
+      <ul>
+        <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Location Services → ForFood</li>
+        <li><strong>Android:</strong> Settings → Apps → ForFood → Permissions → Location</li>
+      </ul>
+      <p>
+        If you deny location access, you can still use the app by manually
+        picking a location on the map.
+      </p>
+    </section>
+
+    <!-- 7 -->
+    <section id="s7">
+      <h2><span class="num">7</span> Camera &amp; Photo Library</h2>
+      <p>
+        With your permission, ForFood accesses your photo library so you can
+        upload a profile picture (users) or menu item photos and gallery images
+        (restaurant owners). We do <strong>not</strong> access the camera or
+        microphone during normal operation.
+      </p>
+    </section>
+
+    <!-- 8 -->
+    <section id="s8">
+      <h2><span class="num">8</span> Push Notifications</h2>
+      <p>
+        We send push notifications about order status, promotions, and
+        account activity. You can disable these in your device settings at
+        any time. We store an FCM device token to deliver notifications; it's
+        deleted when you log out.
+      </p>
+    </section>
+
+    <!-- 9 -->
+    <section id="s9">
+      <h2><span class="num">9</span> Data Retention</h2>
+      <ul>
+        <li><strong>Account data:</strong> kept while your account is active.</li>
+        <li><strong>Order history:</strong> kept for up to <strong>3 years</strong> for tax, accounting, and dispute purposes.</li>
+        <li><strong>Chat messages:</strong> kept while the order exists in your history.</li>
+        <li><strong>Location:</strong> used in real time only — we do not store a location history.</li>
+      </ul>
+      <p>
+        When you delete your account, we erase personal data within
+        <strong>30 days</strong>, except data we are legally required to keep
+        (e.g., financial records).
+      </p>
+    </section>
+
+    <!-- 10 -->
+    <section id="s10">
+      <h2><span class="num">10</span> Data Security</h2>
+      <p>
+        We protect your data using industry-standard measures:
+      </p>
+      <ul>
+        <li>All traffic between the app and our servers is encrypted via HTTPS/TLS.</li>
+        <li>Firebase Firestore security rules restrict access to your own data.</li>
+        <li>Passwords are hashed and never stored in plain text.</li>
+      </ul>
+      <p>
+        No system is 100% secure. If a breach affects your personal data,
+        we will notify you as required by applicable law.
+      </p>
+    </section>
+
+    <!-- 11 -->
+    <section id="s11">
+      <h2><span class="num">11</span> Children's Privacy</h2>
+      <p>
+        ForFood is <strong>not intended for children under 13</strong>
+        (or under 16 in the EEA). We do not knowingly collect data from
+        children. If you believe a child has provided us personal data,
+        please contact us at
+        <a class="inline" href="mailto:support@forfood.com">support@forfood.com</a>
+        and we will delete it promptly.
+      </p>
+    </section>
+
+    <!-- 12 -->
+    <section id="s12">
+      <h2><span class="num">12</span> Your Rights</h2>
+      <p>Depending on your location, you may have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> the personal data we hold about you.</li>
+        <li><strong>Correct</strong> inaccurate data (editable in-app via Profile).</li>
+        <li><strong>Delete</strong> your account and data ("Delete Account" in Settings).</li>
+        <li><strong>Object</strong> to or restrict certain processing.</li>
+        <li><strong>Portability</strong> — receive a copy of your data in a machine-readable format.</li>
+        <li><strong>Withdraw consent</strong> for location, notifications, or photo access at any time.</li>
+      </ul>
+      <p>
+        To exercise these rights, email
+        <a class="inline" href="mailto:support@forfood.com">support@forfood.com</a>.
+        We respond within <strong>30 days</strong>.
+      </p>
+    </section>
+
+    <!-- 13 -->
+    <section id="s13">
+      <h2><span class="num">13</span> International Transfers</h2>
+      <p>
+        ForFood uses Google Firebase servers, which may store and process
+        your data in countries outside your own (including the United
+        States). We rely on standard contractual clauses and equivalent
+        safeguards to protect your data during these transfers.
+      </p>
+    </section>
+
+    <!-- 14 -->
+    <section id="s14">
+      <h2><span class="num">14</span> Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. When we do,
+        we will update the "Last updated" date at the bottom of this page
+        and, for material changes, notify you in the app. Continued use of
+        ForFood after changes means you accept the updated policy.
+      </p>
+    </section>
+
+    <!-- 15 -->
+    <section id="s15">
+      <h2><span class="num">15</span> Contact Us</h2>
+      <p>
+        Questions about this Privacy Policy or your data? Get in touch:
+      </p>
+
+      <div class="contact-card">
+        <h3>Data Protection Contact</h3>
+        <p>We typically respond within 24&nbsp;hours.</p>
+        <a class="email" href="mailto:support@forfood.com">
+          ✉️ support@forfood.com
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="updated">Last updated: September 15, 2026</div>
+  <div>© 2026 ForFood. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
